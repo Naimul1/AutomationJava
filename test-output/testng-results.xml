@@ -1,0 +1,770 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="5" total="83" passed="71" failed="7" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-10-09T02:12:45 EDT" name="Suite" finished-at="2024-10-09T02:13:32 EDT" duration-ms="46191">
+    <groups>
+      <group name="Sanity">
+        <method signature="TestScenario3.third_testcase()[pri:0, instance:testNGDemo.TestScenario3@2584b82d]" name="third_testcase" class="testNGDemo.TestScenario3"/>
+        <method signature="TestScenario5.second_testcase()[pri:0, instance:testNGDemo.TestScenario5@6a4f1a55]" name="second_testcase" class="testNGDemo.TestScenario5"/>
+      </group> <!-- Sanity -->
+      <group name="Regression">
+        <method signature="TestScenario5.third_testcase()[pri:0, instance:testNGDemo.TestScenario5@6a4f1a55]" name="third_testcase" class="testNGDemo.TestScenario5"/>
+      </group> <!-- Regression -->
+      <group name="Smoke">
+        <method signature="TestNGDemo.meth1()[pri:0, instance:firstpkg.TestNGDemo@700fb871]" name="meth1" class="firstpkg.TestNGDemo"/>
+        <method signature="TestScenario3.first_testcase()[pri:0, instance:testNGDemo.TestScenario3@2584b82d]" name="first_testcase" class="testNGDemo.TestScenario3"/>
+      </group> <!-- Smoke -->
+      <group name="SEPT2024">
+        <method signature="TestScenario7.first_testcase()[pri:0, instance:testNGDemo.TestScenario7@6f43c82]" name="first_testcase" class="testNGDemo.TestScenario7"/>
+      </group> <!-- SEPT2024 -->
+      <group name="Regressin">
+        <method signature="TestScenario3.second_testcase()[pri:0, instance:testNGDemo.TestScenario3@2584b82d]" name="second_testcase" class="testNGDemo.TestScenario3"/>
+        <method signature="TestScenario3.third_testcase()[pri:0, instance:testNGDemo.TestScenario3@2584b82d]" name="third_testcase" class="testNGDemo.TestScenario3"/>
+      </group> <!-- Regressin -->
+    </groups>
+    <test started-at="2024-10-09T02:12:45 EDT" name="Test" finished-at="2024-10-09T02:13:32 EDT" duration-ms="46191">
+      <class name="firstpkg.TestNGDemo">
+        <test-method signature="meth1()[pri:0, instance:firstpkg.TestNGDemo@700fb871]" started-at="2024-10-09T02:13:11 EDT" name="meth1" finished-at="2024-10-09T02:13:11 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- meth1 -->
+      </class> <!-- firstpkg.TestNGDemo -->
+      <class name="org.testingworldautomation.TestingWorldSiteTwo">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:org.testingworldautomation.TestingWorldSiteTwo@3b35a229]" started-at="2024-10-09T02:13:11 EDT" name="launchBrowser" finished-at="2024-10-09T02:13:13 EDT" duration-ms="2068" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="registration_page()[pri:0, instance:org.testingworldautomation.TestingWorldSiteTwo@3b35a229]" started-at="2024-10-09T02:13:13 EDT" name="registration_page" finished-at="2024-10-09T02:13:21 EDT" duration-ms="8034" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registration_page -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:org.testingworldautomation.TestingWorldSiteTwo@3b35a229]" started-at="2024-10-09T02:13:21 EDT" name="closeBrowser" finished-at="2024-10-09T02:13:21 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- org.testingworldautomation.TestingWorldSiteTwo -->
+      <class name="testNGDemo.TestScenario1">
+        <test-method signature="seventh_testcase()[pri:-2, instance:testNGDemo.TestScenario1@6933b6c6]" started-at="2024-10-09T02:12:46 EDT" name="seventh_testcase" finished-at="2024-10-09T02:12:46 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seventh_testcase -->
+        <test-method signature="sixth_testcase()[pri:-1, instance:testNGDemo.TestScenario1@6933b6c6]" started-at="2024-10-09T02:12:46 EDT" name="sixth_testcase" finished-at="2024-10-09T02:12:46 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sixth_testcase -->
+        <test-method signature="first_testcase()[pri:1, instance:testNGDemo.TestScenario1@6933b6c6]" started-at="2024-10-09T02:12:46 EDT" name="first_testcase" finished-at="2024-10-09T02:12:46 EDT" duration-ms="1" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[thhis validation failed expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: thhis validation failed expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:819)
+at testNGDemo.TestScenario1.first_testcase(TestScenario1.java:14)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- first_testcase -->
+        <test-method signature="second_testcase()[pri:2, instance:testNGDemo.TestScenario1@6933b6c6]" started-at="2024-10-09T02:12:46 EDT" name="second_testcase" finished-at="2024-10-09T02:12:46 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- second_testcase -->
+        <test-method signature="third_testcase()[pri:3, instance:testNGDemo.TestScenario1@6933b6c6]" started-at="2024-10-09T02:12:46 EDT" name="third_testcase" finished-at="2024-10-09T02:12:46 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- third_testcase -->
+        <test-method signature="fifth_testcase()[pri:4, instance:testNGDemo.TestScenario1@6933b6c6]" started-at="2024-10-09T02:12:46 EDT" name="fifth_testcase" finished-at="2024-10-09T02:12:46 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fifth_testcase -->
+      </class> <!-- testNGDemo.TestScenario1 -->
+      <class name="org.testingworldautomation.FetchDataCompare">
+        <test-method signature="login_page()[pri:0, instance:org.testingworldautomation.FetchDataCompare@13d73f29]" started-at="2024-10-09T02:13:29 EDT" name="login_page" finished-at="2024-10-09T02:13:32 EDT" duration-ms="2519" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_page -->
+      </class> <!-- org.testingworldautomation.FetchDataCompare -->
+      <class name="org.demoqasite.TestingDemoQaSite">
+        <test-method signature="homePage()[pri:0, instance:org.demoqasite.TestingDemoQaSite@1e16c0aa]" started-at="2024-10-09T02:13:25 EDT" name="homePage" finished-at="2024-10-09T02:13:29 EDT" duration-ms="4492" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePage -->
+      </class> <!-- org.demoqasite.TestingDemoQaSite -->
+      <class name="org.xyz.automation.uo.KeyboardMouse">
+        <test-method signature="handleFrames()[pri:0, instance:org.xyz.automation.uo.KeyboardMouse@9816741]" started-at="2024-10-09T02:13:21 EDT" name="handleFrames" finished-at="2024-10-09T02:13:25 EDT" duration-ms="3839" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- handleFrames -->
+      </class> <!-- org.xyz.automation.uo.KeyboardMouse -->
+      <class name="testNGDemo.TestScenario3">
+        <test-method signature="fifth_testcase()[pri:0, instance:testNGDemo.TestScenario3@2584b82d]" started-at="2024-10-09T02:12:46 EDT" name="fifth_testcase" finished-at="2024-10-09T02:12:46 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fifth_testcase -->
+        <test-method signature="first_testcase()[pri:0, instance:testNGDemo.TestScenario3@2584b82d]" started-at="2024-10-09T02:12:46 EDT" name="first_testcase" finished-at="2024-10-09T02:12:46 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- first_testcase -->
+        <test-method signature="forth_testcase()[pri:0, instance:testNGDemo.TestScenario3@2584b82d]" started-at="2024-10-09T02:12:46 EDT" name="forth_testcase" finished-at="2024-10-09T02:12:46 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- forth_testcase -->
+        <test-method signature="second_testcase()[pri:0, instance:testNGDemo.TestScenario3@2584b82d]" started-at="2024-10-09T02:12:46 EDT" name="second_testcase" finished-at="2024-10-09T02:12:46 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- second_testcase -->
+        <test-method signature="seventh_testcase()[pri:0, instance:testNGDemo.TestScenario3@2584b82d]" started-at="2024-10-09T02:12:46 EDT" name="seventh_testcase" finished-at="2024-10-09T02:12:46 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seventh_testcase -->
+        <test-method signature="sixth_testcase()[pri:0, instance:testNGDemo.TestScenario3@2584b82d]" started-at="2024-10-09T02:12:46 EDT" name="sixth_testcase" finished-at="2024-10-09T02:12:46 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sixth_testcase -->
+        <test-method signature="third_testcase()[pri:0, instance:testNGDemo.TestScenario3@2584b82d]" started-at="2024-10-09T02:12:46 EDT" name="third_testcase" finished-at="2024-10-09T02:12:46 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- third_testcase -->
+      </class> <!-- testNGDemo.TestScenario3 -->
+      <class name="testNGDemo.TestScenario2">
+        <test-method signature="fifth_testcase()[pri:0, instance:testNGDemo.TestScenario2@7bbc8656]" started-at="2024-10-09T02:12:46 EDT" name="fifth_testcase" finished-at="2024-10-09T02:12:46 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fifth_testcase -->
+        <test-method signature="first_testcase()[pri:0, instance:testNGDemo.TestScenario2@7bbc8656]" started-at="2024-10-09T02:12:46 EDT" name="first_testcase" finished-at="2024-10-09T02:12:46 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- first_testcase -->
+        <test-method signature="forth_testcase()[pri:0, instance:testNGDemo.TestScenario2@7bbc8656]" started-at="2024-10-09T02:12:46 EDT" name="forth_testcase" finished-at="2024-10-09T02:12:46 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- forth_testcase -->
+        <test-method signature="second_testcase()[pri:0, instance:testNGDemo.TestScenario2@7bbc8656]" started-at="2024-10-09T02:12:46 EDT" name="second_testcase" finished-at="2024-10-09T02:12:46 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- second_testcase -->
+        <test-method signature="seventh_testcase()[pri:0, instance:testNGDemo.TestScenario2@7bbc8656]" started-at="2024-10-09T02:12:46 EDT" name="seventh_testcase" finished-at="2024-10-09T02:12:46 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seventh_testcase -->
+        <test-method signature="sixth_testcase()[pri:0, instance:testNGDemo.TestScenario2@7bbc8656]" started-at="2024-10-09T02:12:46 EDT" name="sixth_testcase" finished-at="2024-10-09T02:12:46 EDT" duration-ms="0" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Hello1] but found [Hello]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Hello1] but found [Hello]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at testNGDemo.TestScenario2.sixth_testcase(TestScenario2.java:42)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sixth_testcase -->
+        <test-method signature="third_testcase()[pri:0, instance:testNGDemo.TestScenario2@7bbc8656]" started-at="2024-10-09T02:12:46 EDT" name="third_testcase" finished-at="2024-10-09T02:12:46 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- third_testcase -->
+      </class> <!-- testNGDemo.TestScenario2 -->
+      <class name="testNGDemo.TestScenario5">
+        <test-method signature="fifth_testcase()[pri:0, instance:testNGDemo.TestScenario5@6a4f1a55]" started-at="2024-10-09T02:12:45 EDT" name="fifth_testcase" finished-at="2024-10-09T02:12:45 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fifth_testcase -->
+        <test-method signature="first_testcase()[pri:0, instance:testNGDemo.TestScenario5@6a4f1a55]" started-at="2024-10-09T02:12:45 EDT" name="first_testcase" finished-at="2024-10-09T02:12:45 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- first_testcase -->
+        <test-method signature="forth_testcase()[pri:0, instance:testNGDemo.TestScenario5@6a4f1a55]" started-at="2024-10-09T02:12:45 EDT" name="forth_testcase" finished-at="2024-10-09T02:12:45 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- forth_testcase -->
+        <test-method signature="second_testcase()[pri:0, instance:testNGDemo.TestScenario5@6a4f1a55]" started-at="2024-10-09T02:12:45 EDT" name="second_testcase" finished-at="2024-10-09T02:12:45 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- second_testcase -->
+        <test-method signature="seventh_testcase()[pri:0, instance:testNGDemo.TestScenario5@6a4f1a55]" started-at="2024-10-09T02:12:45 EDT" name="seventh_testcase" finished-at="2024-10-09T02:12:46 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seventh_testcase -->
+        <test-method signature="sixth_testcase()[pri:0, instance:testNGDemo.TestScenario5@6a4f1a55]" started-at="2024-10-09T02:12:46 EDT" name="sixth_testcase" finished-at="2024-10-09T02:12:46 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sixth_testcase -->
+        <test-method signature="third_testcase()[pri:0, instance:testNGDemo.TestScenario5@6a4f1a55]" started-at="2024-10-09T02:12:46 EDT" name="third_testcase" finished-at="2024-10-09T02:12:46 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- third_testcase -->
+      </class> <!-- testNGDemo.TestScenario5 -->
+      <class name="org.xyz.automation.uo.FirstAutomation">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:org.xyz.automation.uo.FirstAutomation@29f7cefd]" started-at="2024-10-09T02:13:05 EDT" name="launchBrowser" finished-at="2024-10-09T02:13:07 EDT" duration-ms="1668" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="validate_loginfunc()[pri:0, instance:org.xyz.automation.uo.FirstAutomation@29f7cefd]" started-at="2024-10-09T02:13:07 EDT" name="validate_loginfunc" finished-at="2024-10-09T02:13:07 EDT" duration-ms="336" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validate_loginfunc -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:org.xyz.automation.uo.FirstAutomation@29f7cefd]" started-at="2024-10-09T02:13:07 EDT" name="launchBrowser" finished-at="2024-10-09T02:13:09 EDT" duration-ms="1664" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="validate_signupfunc()[pri:0, instance:org.xyz.automation.uo.FirstAutomation@29f7cefd]" started-at="2024-10-09T02:13:09 EDT" name="validate_signupfunc" finished-at="2024-10-09T02:13:11 EDT" duration-ms="1502" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[@role='button' and @rel='async']"}
+  (Session info: chrome=128.0.6613.137)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [137c326bcff6d2809e2a64e3f99d2e27, findElement {value=//a[@role='button' and @rel='async'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.137, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\Naimu\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65209}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65209/devtoo..., se:cdpVersion: 128.0.6613.137, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 137c326bcff6d2809e2a64e3f99d2e27]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@role='button' and @rel='async']"}
+  (Session info: chrome=128.0.6613.137)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [137c326bcff6d2809e2a64e3f99d2e27, findElement {value=//a[@role='button' and @rel='async'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.137, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\Naimu\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65209}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65209/devtoo..., se:cdpVersion: 128.0.6613.137, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 137c326bcff6d2809e2a64e3f99d2e27
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.xyz.automation.uo.FirstAutomation.validate_signupfunc(FirstAutomation.java:48)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validate_signupfunc -->
+      </class> <!-- org.xyz.automation.uo.FirstAutomation -->
+      <class name="org.testingworldautomation.TestingWorldSite">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:org.testingworldautomation.TestingWorldSite@1f9e9475]" started-at="2024-10-09T02:12:46 EDT" name="launchBrowser" finished-at="2024-10-09T02:12:48 EDT" duration-ms="2621" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="login_page()[pri:0, instance:org.testingworldautomation.TestingWorldSite@1f9e9475]" started-at="2024-10-09T02:12:48 EDT" name="login_page" finished-at="2024-10-09T02:12:51 EDT" duration-ms="2362" status="FAIL">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=128.0.6613.137)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [be0e8809adebe4841c31d5daefbfe6c4, clickElement {id=f.20A5A1E1F03550DF5D8D649A9B4E51C0.d.36AB685C5264737C2ACF16559932E30F.e.51}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.137, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\Naimu\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65084}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65084/devtoo..., se:cdpVersion: 128.0.6613.137, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (be0e8809adebe4841c31d5daefbfe6c4)] -> xpath: //input[@type='submit'and@value='Sign up']]
+Session ID: be0e8809adebe4841c31d5daefbfe6c4]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=128.0.6613.137)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [be0e8809adebe4841c31d5daefbfe6c4, clickElement {id=f.20A5A1E1F03550DF5D8D649A9B4E51C0.d.36AB685C5264737C2ACF16559932E30F.e.51}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.137, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\Naimu\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65084}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65084/devtoo..., se:cdpVersion: 128.0.6613.137, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (be0e8809adebe4841c31d5daefbfe6c4)] -> xpath: //input[@type='submit'and@value='Sign up']]
+Session ID: be0e8809adebe4841c31d5daefbfe6c4
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at org.testingworldautomation.TestingWorldSite.login_page(TestingWorldSite.java:75)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_page -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:org.testingworldautomation.TestingWorldSite@1f9e9475]" started-at="2024-10-09T02:12:51 EDT" name="closeBrowser" finished-at="2024-10-09T02:12:51 EDT" duration-ms="139" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:org.testingworldautomation.TestingWorldSite@1f9e9475]" started-at="2024-10-09T02:12:51 EDT" name="launchBrowser" finished-at="2024-10-09T02:12:53 EDT" duration-ms="2007" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="registration_page()[pri:0, instance:org.testingworldautomation.TestingWorldSite@1f9e9475]" started-at="2024-10-09T02:12:53 EDT" name="registration_page" finished-at="2024-10-09T02:13:05 EDT" duration-ms="12579" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//em[text()='I agree with terms and conditions']"}
+  (Session info: chrome=128.0.6613.137)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [28eb6e74b04f0f1f8444ad14b035bfed, findElement {value=//em[text()='I agree with terms and conditions'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.137, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\Naimu\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65111}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65111/devtoo..., se:cdpVersion: 128.0.6613.137, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 28eb6e74b04f0f1f8444ad14b035bfed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//em[text()='I agree with terms and conditions']"}
+  (Session info: chrome=128.0.6613.137)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [28eb6e74b04f0f1f8444ad14b035bfed, findElement {value=//em[text()='I agree with terms and conditions'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.137, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\Naimu\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65111}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65111/devtoo..., se:cdpVersion: 128.0.6613.137, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 28eb6e74b04f0f1f8444ad14b035bfed
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.testingworldautomation.TestingWorldSite.registration_page(TestingWorldSite.java:56)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registration_page -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:org.testingworldautomation.TestingWorldSite@1f9e9475]" started-at="2024-10-09T02:13:05 EDT" name="closeBrowser" finished-at="2024-10-09T02:13:05 EDT" duration-ms="186" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- org.testingworldautomation.TestingWorldSite -->
+      <class name="testNGDemo.TestScenario4">
+        <test-method signature="fifth_testcase()[pri:0, instance:testNGDemo.TestScenario4@7dfd3c81]" started-at="2024-10-09T02:12:46 EDT" name="fifth_testcase" finished-at="2024-10-09T02:12:46 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fifth_testcase -->
+        <test-method signature="first_testcase()[pri:0, instance:testNGDemo.TestScenario4@7dfd3c81]" started-at="2024-10-09T02:12:46 EDT" name="first_testcase" finished-at="2024-10-09T02:12:46 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- first_testcase -->
+        <test-method signature="forth_testcase()[pri:0, instance:testNGDemo.TestScenario4@7dfd3c81]" started-at="2024-10-09T02:12:46 EDT" name="forth_testcase" finished-at="2024-10-09T02:12:46 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- forth_testcase -->
+        <test-method signature="second_testcase()[pri:0, instance:testNGDemo.TestScenario4@7dfd3c81]" started-at="2024-10-09T02:12:46 EDT" name="second_testcase" finished-at="2024-10-09T02:12:46 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- second_testcase -->
+        <test-method signature="seventh_testcase()[pri:0, instance:testNGDemo.TestScenario4@7dfd3c81]" started-at="2024-10-09T02:12:46 EDT" name="seventh_testcase" finished-at="2024-10-09T02:12:46 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seventh_testcase -->
+        <test-method signature="sixth_testcase()[pri:0, instance:testNGDemo.TestScenario4@7dfd3c81]" started-at="2024-10-09T02:12:46 EDT" name="sixth_testcase" finished-at="2024-10-09T02:12:46 EDT" duration-ms="1" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Hello1] but found [Hello]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Hello1] but found [Hello]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at testNGDemo.TestScenario4.sixth_testcase(TestScenario4.java:42)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sixth_testcase -->
+        <test-method signature="third_testcase()[pri:0, instance:testNGDemo.TestScenario4@7dfd3c81]" started-at="2024-10-09T02:12:46 EDT" name="third_testcase" finished-at="2024-10-09T02:12:46 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- third_testcase -->
+      </class> <!-- testNGDemo.TestScenario4 -->
+      <class name="testNGDemo.TestScenario7">
+        <test-method signature="fifth_testcase()[pri:0, instance:testNGDemo.TestScenario7@6f43c82]" started-at="2024-10-09T02:12:45 EDT" name="fifth_testcase" finished-at="2024-10-09T02:12:45 EDT" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fifth_testcase -->
+        <test-method signature="first_testcase()[pri:0, instance:testNGDemo.TestScenario7@6f43c82]" started-at="2024-10-09T02:12:45 EDT" name="first_testcase" finished-at="2024-10-09T02:12:45 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- first_testcase -->
+        <test-method signature="forth_testcase()[pri:0, instance:testNGDemo.TestScenario7@6f43c82]" started-at="2024-10-09T02:12:45 EDT" name="forth_testcase" finished-at="2024-10-09T02:12:45 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- forth_testcase -->
+        <test-method signature="second_testcase()[pri:0, instance:testNGDemo.TestScenario7@6f43c82]" started-at="2024-10-09T02:12:45 EDT" name="second_testcase" finished-at="2024-10-09T02:12:45 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- second_testcase -->
+        <test-method signature="seventh_testcase()[pri:0, instance:testNGDemo.TestScenario7@6f43c82]" started-at="2024-10-09T02:12:45 EDT" name="seventh_testcase" finished-at="2024-10-09T02:12:45 EDT" duration-ms="3" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Hello2] but found [Hello]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Hello2] but found [Hello]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at testNGDemo.TestScenario7.seventh_testcase(TestScenario7.java:48)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seventh_testcase -->
+        <test-method signature="sixth_testcase()[pri:0, instance:testNGDemo.TestScenario7@6f43c82]" started-at="2024-10-09T02:12:45 EDT" name="sixth_testcase" finished-at="2024-10-09T02:12:45 EDT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sixth_testcase -->
+        <test-method signature="third_testcase()[pri:0, instance:testNGDemo.TestScenario7@6f43c82]" started-at="2024-10-09T02:12:45 EDT" name="third_testcase" finished-at="2024-10-09T02:12:45 EDT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- third_testcase -->
+      </class> <!-- testNGDemo.TestScenario7 -->
+      <class name="testNGDemo.TestScenario10">
+        <test-method signature="fifth_testcase()[pri:0, instance:testNGDemo.TestScenario10@7d3e8655]" started-at="2024-10-09T02:12:46 EDT" name="fifth_testcase" finished-at="2024-10-09T02:12:46 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fifth_testcase -->
+        <test-method signature="first_testcase()[pri:0, instance:testNGDemo.TestScenario10@7d3e8655]" started-at="2024-10-09T02:12:46 EDT" name="first_testcase" finished-at="2024-10-09T02:12:46 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- first_testcase -->
+        <test-method signature="forth_testcase()[pri:0, instance:testNGDemo.TestScenario10@7d3e8655]" started-at="2024-10-09T02:12:46 EDT" name="forth_testcase" finished-at="2024-10-09T02:12:46 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- forth_testcase -->
+        <test-method signature="seventh_testcase()[pri:0, instance:testNGDemo.TestScenario10@7d3e8655]" started-at="2024-10-09T02:12:46 EDT" name="seventh_testcase" finished-at="2024-10-09T02:12:46 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seventh_testcase -->
+        <test-method signature="second_testcase()[pri:0, instance:testNGDemo.TestScenario10@7d3e8655]" started-at="2024-10-09T02:12:46 EDT" name="second_testcase" finished-at="2024-10-09T02:12:46 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- second_testcase -->
+        <test-method signature="sixth_testcase()[pri:0, instance:testNGDemo.TestScenario10@7d3e8655]" started-at="2024-10-09T02:12:46 EDT" name="sixth_testcase" finished-at="2024-10-09T02:12:46 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sixth_testcase -->
+        <test-method signature="third_testcase()[pri:0, instance:testNGDemo.TestScenario10@7d3e8655]" started-at="2024-10-09T02:12:46 EDT" name="third_testcase" finished-at="2024-10-09T02:12:46 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- third_testcase -->
+      </class> <!-- testNGDemo.TestScenario10 -->
+      <class name="testNGDemo.TestScenario6">
+        <test-method signature="fifth_testcase()[pri:0, instance:testNGDemo.TestScenario6@4dc27487]" started-at="2024-10-09T02:12:45 EDT" name="fifth_testcase" finished-at="2024-10-09T02:12:45 EDT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fifth_testcase -->
+        <test-method signature="first_testcase()[pri:0, instance:testNGDemo.TestScenario6@4dc27487]" started-at="2024-10-09T02:12:45 EDT" name="first_testcase" finished-at="2024-10-09T02:12:45 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- first_testcase -->
+        <test-method signature="forth_testcase()[pri:0, instance:testNGDemo.TestScenario6@4dc27487]" started-at="2024-10-09T02:12:45 EDT" name="forth_testcase" finished-at="2024-10-09T02:12:45 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- forth_testcase -->
+        <test-method signature="second_testcase()[pri:0, instance:testNGDemo.TestScenario6@4dc27487]" started-at="2024-10-09T02:12:45 EDT" name="second_testcase" finished-at="2024-10-09T02:12:45 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- second_testcase -->
+        <test-method signature="seventh_testcase()[pri:0, instance:testNGDemo.TestScenario6@4dc27487]" started-at="2024-10-09T02:12:45 EDT" name="seventh_testcase" finished-at="2024-10-09T02:12:45 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seventh_testcase -->
+        <test-method signature="sixth_testcase()[pri:0, instance:testNGDemo.TestScenario6@4dc27487]" started-at="2024-10-09T02:12:45 EDT" name="sixth_testcase" finished-at="2024-10-09T02:12:45 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sixth_testcase -->
+        <test-method signature="third_testcase()[pri:0, instance:testNGDemo.TestScenario6@4dc27487]" started-at="2024-10-09T02:12:45 EDT" name="third_testcase" finished-at="2024-10-09T02:12:45 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- third_testcase -->
+      </class> <!-- testNGDemo.TestScenario6 -->
+      <class name="testNGDemo.TestScenario9">
+        <test-method signature="fifth_testcase()[pri:0, instance:testNGDemo.TestScenario9@f58853c]" started-at="2024-10-09T02:13:05 EDT" name="fifth_testcase" finished-at="2024-10-09T02:13:05 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fifth_testcase -->
+        <test-method signature="first_testcase()[pri:0, instance:testNGDemo.TestScenario9@f58853c]" started-at="2024-10-09T02:13:05 EDT" name="first_testcase" finished-at="2024-10-09T02:13:05 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- first_testcase -->
+        <test-method signature="forth_testcase()[pri:0, instance:testNGDemo.TestScenario9@f58853c]" started-at="2024-10-09T02:13:05 EDT" name="forth_testcase" finished-at="2024-10-09T02:13:05 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- forth_testcase -->
+        <test-method signature="second_testcase()[pri:0, instance:testNGDemo.TestScenario9@f58853c]" started-at="2024-10-09T02:13:05 EDT" name="second_testcase" finished-at="2024-10-09T02:13:05 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- second_testcase -->
+        <test-method signature="sixth_testcase()[pri:0, instance:testNGDemo.TestScenario9@f58853c]" started-at="2024-10-09T02:13:05 EDT" name="sixth_testcase" finished-at="2024-10-09T02:13:05 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sixth_testcase -->
+        <test-method signature="seventh_testcase()[pri:0, instance:testNGDemo.TestScenario9@f58853c]" started-at="2024-10-09T02:13:05 EDT" name="seventh_testcase" finished-at="2024-10-09T02:13:05 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seventh_testcase -->
+        <test-method signature="third_testcase()[pri:0, instance:testNGDemo.TestScenario9@f58853c]" started-at="2024-10-09T02:13:05 EDT" name="third_testcase" finished-at="2024-10-09T02:13:05 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- third_testcase -->
+      </class> <!-- testNGDemo.TestScenario9 -->
+      <class name="testNGDemo.TestScenario8">
+        <test-method signature="fifth_testcase()[pri:0, instance:testNGDemo.TestScenario8@1224144a]" started-at="2024-10-09T02:13:05 EDT" name="fifth_testcase" finished-at="2024-10-09T02:13:05 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fifth_testcase -->
+        <test-method signature="first_testcase()[pri:0, instance:testNGDemo.TestScenario8@1224144a]" started-at="2024-10-09T02:13:05 EDT" name="first_testcase" finished-at="2024-10-09T02:13:05 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- first_testcase -->
+        <test-method signature="forth_testcase()[pri:0, instance:testNGDemo.TestScenario8@1224144a]" started-at="2024-10-09T02:13:05 EDT" name="forth_testcase" finished-at="2024-10-09T02:13:05 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- forth_testcase -->
+        <test-method signature="second_testcase()[pri:0, instance:testNGDemo.TestScenario8@1224144a]" started-at="2024-10-09T02:13:05 EDT" name="second_testcase" finished-at="2024-10-09T02:13:05 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- second_testcase -->
+        <test-method signature="seventh_testcase()[pri:0, instance:testNGDemo.TestScenario8@1224144a]" started-at="2024-10-09T02:13:05 EDT" name="seventh_testcase" finished-at="2024-10-09T02:13:05 EDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seventh_testcase -->
+        <test-method signature="sixth_testcase()[pri:0, instance:testNGDemo.TestScenario8@1224144a]" started-at="2024-10-09T02:13:05 EDT" name="sixth_testcase" finished-at="2024-10-09T02:13:05 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sixth_testcase -->
+        <test-method signature="third_testcase()[pri:0, instance:testNGDemo.TestScenario8@1224144a]" started-at="2024-10-09T02:13:05 EDT" name="third_testcase" finished-at="2024-10-09T02:13:05 EDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- third_testcase -->
+      </class> <!-- testNGDemo.TestScenario8 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

@@ -1,0 +1,3 @@
+This is basic java programming 
+to read the data from txt file 
+now we used while loop to read the data
